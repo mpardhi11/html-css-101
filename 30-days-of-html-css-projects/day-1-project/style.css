@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "comic sans ms", sans-serif;
+  color: #a100f2;
+}
+
+.container {
+  background-color: #ffdde1;
+  min-height: 100vh;
+  border: 10px solid #1d1e4c;
+}
+
+.top_section {
+  display: flex; /* makes the div side by side */
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: flex-end; /* aligns the text to the bottom */
+}
+
+.content {
+  max-width: 900px;
+  /* min-width: 500px; */
+  /* max-width: auto; */
+  margin: 0 auto;
+}
+
+.image_container,
+img {
+  width: 300px;
+  height: 350px;
+  display: block;
+}
+
+.image_container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.top_section h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #1d1e4c;
+  text-transform: uppercase;
+}
+
+.top_section h4 {
+  text-align: end;
+  font-size: 1.2rem;
+}
+
+.about_section {
+  margin-top: 50px;
+}
+
+.about_section h2 {
+  font-size: 3rem; /* By default, 16px * 3 = 48px */
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about_section p {
+  font-size: 1.2rem; /* By default, 16px * 1.2 = 19.2px */
+  line-height: 30px; /* increases the line height between the text */
+  text-align: justify;
+}
+
+.small_bio {
+  /* margin-top: 20px; */
+  margin: 50px 0;
+}
+
+.small_bio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.small_bio ul {
+  margin-left: 3rem; /* indents the list 16px * 3 = 48px */
+  text-align: justify;
+}
+
+.small_bio ul li {
+  margin-bottom: 0.6rem;
+}
+
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
