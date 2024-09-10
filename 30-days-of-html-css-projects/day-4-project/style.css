@@ -40,11 +40,16 @@ body {
 
 .box1,
 .box2,
-.box3 > h1 {
+.box3 {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box1,
+.box2,
+.box3 > h1 {
   font-size: 3rem;
 }
 
