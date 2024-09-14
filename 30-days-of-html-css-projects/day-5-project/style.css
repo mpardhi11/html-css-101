@@ -1,0 +1,98 @@
+:root {
+  --body: #a70000;
+  --brown: #5e0808;
+  --nav-hover: #f2f2f2;
+  --red: #ff0000;
+  --card: #ffd8d8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body);
+  color: greenyellow;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+nav {
+  background-color: var(--brown);
+  border-radius: 20px;
+  border: 2px solid #73ad21;
+  min-height: 93px;
+}
+
+.navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 93px;
+}
+
+.left_nav {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 700px;
+}
+.logo,
+.link {
+  background: var(--red);
+  height: 40px;
+  border-radius: 15px;
+}
+
+.logo {
+  min-width: 160px;
+}
+.link {
+  /* min-width: calc(100% / 5); */
+  width: calc((100% - 160px) / 5);
+}
+
+.avatar {
+  background: var(--red);
+  width: 60px; /* Diameter = 2 * Radius */
+  height: 60px; /* Diameter = 2 * Radius */
+  border-radius: 50%; /* Makes the element a circle */
+}
+
+main {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card {
+  background-color: var(--card);
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  gap: 24px;
+}
+
+.circle {
+  background-color: var(--red);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.line_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.line {
+  background-color: var(--brown);
+  border-radius: 12px;
+  height: 24px;
+  width: 100%;
+}
