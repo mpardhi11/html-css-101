@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #525252;
+  --secondary-color: #fff;
+  --primary-on-hover: red;
+  --on-hover-font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: var(--primary-color);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  align-items: center;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+  position: relative; /* for dropdown (TODO: Google it) */
+  width: 100%;
+}
+
+.logo {
+  width: 120px;
+}
+
+.user-pic {
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+  width: 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.sub-menu-wrap {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 10%;
+  top: 100%;
+  transition: max-height 0.5s;
+  width: 320px;
+}
+
+.sub-menu-wrap.active {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.user-info {
+  align-items: center;
+  display: flex;
+}
+.user-info h3 {
+  font-weight: 600;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 60px;
+}
+
+.sub-menu hr {
+  background: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 15px 0 10px;
+  width: 100%;
+}
+
+.sub-menu-link {
+  align-items: center;
+  color: #525252;
+  display: flex;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.sub-menu-link p {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.sub-menu-link img {
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: rotate(180deg);
+  /* transform: translateX(10px); */
+  color: var(--primary-on-hover);
+}
+
+.sub-menu-link:hover p,
+ul li a:hover {
+  color: var(--primary-on-hover);
+  font-weight: var(--on-hover-font-weight);
+}

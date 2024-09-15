@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mohit Pardhi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>How to make drop down</title>
+  </head>
+
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="assets/logo.png" alt="company logo" class="logo" />
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Content</a></li>
+        </ul>
+
+        <img src="assets/user.png" alt="user profile" class="user-pic" onclick="toggleMenu()" />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="assets/user.png" alt="user-pic" />
+              <h3>Mohit Pardhi</h3>
+            </div>
+
+            <hr />
+
+            <!--  -->
+
+            <a href="#" class="sub-menu-link">
+              <img src="assets/profile.png" alt="" />
+              <p>Edit Profile</p>
+              <span> ></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <img src="assets/setting.png" alt="" />
+              <p>Setting & Privacy</p>
+              <span> ></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <img src="assets/help.png" alt="" />
+              <p>Help & Support</p>
+              <span> ></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <img src="assets/logout.png" alt="" />
+              <p>Logout</p>
+              <span> ></span>
+            </a>
+
+            <!--  -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const subMenu = document.getElementById("subMenu");
+        subMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
