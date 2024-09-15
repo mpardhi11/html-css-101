@@ -1,0 +1,57 @@
+:root {
+  --primary-body-color: #ececec;
+  --button-color-off: #ff0000;
+  --button-color-on: greenyellow;
+  --button-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+  --button-box-shadow-inset: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12), inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+  background: var(--primary-body-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input[type="checkbox"] {
+  height: 200px;
+  width: 200px;
+  box-shadow: var(--button-box-shadow);
+  appearance: none; /* The appearance property is used to remove the default styling of an element provided by the browser. This is particularly useful for form elements like buttons, checkboxes, and radio buttons, which have default styles that vary across different browsers.*/
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 8px solid #ececec;
+  outline: none;
+  display: flex; /* The outline property is used to remove the outline that browsers typically add to elements when they are focused (e.g., when a user clicks on a button or an input field). This is often used to create custom focus styles.*/
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]:after {
+  font-family: FontAwesome;
+  content: "\f011"; /* Unicode character for the check mark icon */
+  /* Note
+Using the content property directly in a CSS class like this is not standard practice. Typically, you would use FontAwesome's predefined classes in your HTML */
+  color: var(--button-color-off);
+  font-size: 100px;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: var(--button-box-shadow-inset);
+}
+
+input[type="checkbox"]:checked:after {
+  content: "\f00c";
+  color: var(--button-color-on);
+}
