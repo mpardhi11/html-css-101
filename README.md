@@ -4,9 +4,9 @@
 
 ## Screenshots
 
+![New Learning 3](what-i-learn-new/neumorphism-ui-button/screenshots/Final.gif)
 ![Screenshot 1](what-i-learn-new/neumorphism-buttons/screenshots/sample.gif)
 ![Screenshot 1](what-i-learn-new/how-to-make-dropdown/screenshots/Final.gif)
-![New Learning](what-i-learn-new/neumorphism-ui-button/screenshots/Final.gif)
 
 ## Project 1 Sunday 25 Aug 2024
 
